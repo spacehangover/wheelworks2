@@ -1,0 +1,44 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;;
+    background-color: #FFFFFF;
+}
+.header h1 {
+    color: #001122;
+    font-weight: 700;
+    font-size: 4em;
+    letter-spacing: -4px;
+    text-align: center;
+    padding-top: 1em;
+    border: magenta;
+}
+.banner {
+  width: 50%;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  border: 2px solid #000;
+  padding-top: 1em;
+  padding-bottom: 5em;
+}
+
+.banner img {
+    max-width: 100%;
+    border: 2px solid #000;
+    height: auto;
+    display: block; /* Re moves any extra spacing below the image */
+    margin: 0 auto; /* Centers the image horizontally within the container */
+  }
+
+@media (min-width: 810px) {
+  .header h1 {
+    font-size: 3em;
+  }
+  .banner img{
+    max-width: 75%;
+  }
+}
