@@ -99,15 +99,16 @@ header button{
     padding: 100px;
     margin-right: auto;
     margin-left: auto;
+    height: 100vh;
   }
   header h1{
     font-size: 72px;
   }
   .image-container{
-    width: 800px;
-    height: 450px;
-    padding-top: 50px;
-    padding-bottom: 500px;
+    width: 300px;
+    height: auto;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
     margin: 0 auto;
   }
   .information{
@@ -140,6 +141,7 @@ header button{
 @media (max-width: 810px) {
   header{
     margin: auto;
+    height: 100vh;
   }
   header h1{
     padding-top: 10vw;
@@ -168,6 +170,7 @@ header button{
   }
   
 }
+
 
 
 .button-4 {

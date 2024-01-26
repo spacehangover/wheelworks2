@@ -9,3 +9,7 @@ $(window).scroll(function() {
     console.log("previous section");
   }
 });
+
+function redirectToExample() {
+    window.location.href = "https://www.wheelworks.com.ar";
+}
