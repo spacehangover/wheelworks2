@@ -155,6 +155,10 @@ header button{
     padding: 15vw;
     padding-bottom: 0px;
   }
+  .information{
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
   .image-container{
     padding-top: 20vh;
     padding-bottom: 5vh;
@@ -162,13 +166,12 @@ header button{
     height: auto;  
   }
   .first-container{
-    display: flex;
+    display: block;
     padding-bottom: 100px;
   }
   .first-container img{
-    width: 400px;
+    width: 65vw;
     height: auto;
-    max-width: 100%;
     background-color: #F7F7F7;
   }
   
