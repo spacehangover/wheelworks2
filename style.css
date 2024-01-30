@@ -119,7 +119,9 @@ header button{
   .container{
     display: flex;
     padding-bottom: 100px;
-    padding-left: 20vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30vw;
     padding-right: 20vw;
   }
   .container img{
@@ -128,10 +130,12 @@ header button{
     max-width: 100%;
   }
   .container-text{
-    width: 475px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
     height: auto;
     justify-content: center;
-    align-items: center;
+    text-align: left;
   }
   .container-text h2{
     margin-top: 20px;
@@ -175,7 +179,7 @@ header button{
     padding-bottom: 0px;
   }
   .container-text h2{
-    margin-top: 300px;
+    margin-top: 5vh;
   }
   .image-container{
     justify-content: center;
