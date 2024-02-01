@@ -17,6 +17,7 @@ header h1{
   font-weight: 700;
   letter-spacing: -4px;
   text-align: center;
+  animation: appearFromBottom 1s ease-out forwards; 
 }
 
 header h2{
@@ -24,13 +25,28 @@ header h2{
   font-weight: 500;
   letter-spacing: -1px;
   text-align: center;
+  animation: appearFromBottom 1s ease-out forwards; 
 }
+
+.header-image-container{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #FFFFFF;
+  animation: appearFromBottom 1s ease-out forwards; 
+}
+
+.header-image-container img{
+  max-width: 100%;
+}
+
 
 .image-container{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  background-color: #F7F7F7;
+  background-color: #FFFFFF;
+  animation: appearFromBottom 1s ease-out forwards; 
 }
 
 .image-container img{
@@ -42,6 +58,7 @@ header button{
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
+  animation: appearFromBottom 1s ease-out forwards; 
 }
 
 
@@ -86,6 +103,9 @@ header button{
   justify-content: left;
 }
 
+.image-container{
+  background-color: #F7F7F7;
+}
 
 /* information action ratio */
 
@@ -105,6 +125,13 @@ header button{
   header h1{
     font-size: 72px;
   }
+  .header-image-container{
+    width: 300px;
+    height: auto;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    margin: 0 auto;
+  }
   .image-container{
     width: 300px;
     height: auto;
@@ -118,7 +145,7 @@ header button{
   }
   .container{
     display: flex;
-    padding-bottom: 100px;
+    padding-bottom: 0px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 30vw;
@@ -167,11 +194,21 @@ header button{
     margin-left: 5vw;
     margin-right: 5vw;
   }
+  .header-image-container{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    width: 60vw;
+    height: auto; 
+    justify-content: center;
+    align-items: center; 
+  }
   .image-container{
     padding-top: 5vh;
     padding-bottom: 5vh;
     width: 60vw;
-    height: auto;  
+    height: auto; 
+    justify-content: center;
+    align-items: center;
   }
   .container{
     display: flex;
@@ -181,22 +218,30 @@ header button{
   .container-text h2{
     margin-top: 5vh;
   }
-  .image-container{
-    justify-content: center;
-    align-items: center;
-    /* width: 65vw;
-    height: auto;
-    background-color: #F7F7F7; */
-  }
   .image-container img{
     max-width: 100%;
     height: auto;
-    /* width: 65vw;
-    height: auto;
-    background-color: #F7F7F7; */
   }
   
 }
+
+
+
+
+@keyframes appearFromBottom {
+  from {
+      opacity: 0;
+      transform: translateY(100%); /* Move the item down initially */
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0); /* Move the item up to its final position */
+  }
+}
+
+
+
+
 
 
 
